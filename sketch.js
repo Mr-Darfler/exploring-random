@@ -26,7 +26,7 @@ class Line {
     }
     show() {
         stroke(0);
-        strokeWeight(1);
+        strokeWeight(2);
         this.x2 += 3 * sin(offset);
         this.y2 += 3 * cos(offset);
         line(this.x2, this.y2, (mouseX + offset), (mouseY - offset));
