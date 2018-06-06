@@ -1,2 +1,0 @@
-# exploring-random
-Using Random
