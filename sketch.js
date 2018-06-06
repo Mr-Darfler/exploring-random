@@ -5,7 +5,6 @@ function setup() {
     createCanvas(600, 400);
     background(255);
     lines.push(new Line(randomGaussian(width / 2), randomGaussian(height / 2)));
-    console.log('hello');
 }
 
 function draw() {
@@ -27,7 +26,7 @@ class Line {
     }
     show() {
         stroke(0);
-        strokeWeight(0.5);
+        strokeWeight(1);
         this.x2 += 3 * sin(offset);
         this.y2 += 3 * cos(offset);
         line(this.x2, this.y2, (mouseX + offset), (mouseY - offset));
